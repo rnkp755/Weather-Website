@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather Website</title>
+  <link rel="icon" type="image/x-icon" href="icons/favicon1.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="icons/logo.png" id="website_logo"></a></li>
+      <li><a href="index.html" id="home"> Home </a></li>
+      <li><a href="pagenotfound.html" id="about"> About </a></li>
+      <li><a href="https://www.linkedin.com/in/hackerraushan/" target="_blank" id="contact"> Contact </a></li>
+    </ul>
+  </nav>
+
+  <form id="weather-form">
+    <label id="label-for-location" for="location">Location</label>
+    <input type="text" id="location" name="location">
+
+    <label id="label-for-unitGroup" for="unitGroup">Unit Group</label>
+    <select id="unitGroup" name="unitGroup">
+      <option value="metric">Metric (&#x2103)</option>
+      <option value="us">US (&#x2109)</option>
+    </select>
+
+    <button type="submit" class="btn">Get Weather</button>
+  </form>
+
+  <div class="content">
+
+    <div class="container-left-info">
+      <h2 style="text-decoration: underline;color: #F6D8D8;">Time</h2>
+      <div id="time"></div>
+      <hr>
+      <h2 style="text-decoration: underline;color: #F6D8D8;">Date</h2>
+      <div id="date"></div>
+      <hr>
+      <h2 style="text-decoration: underline;color: #F6D8D8;">Location</h2>
+      <div id="location">"N/A"</div>
+      <hr>
+    </div>
+
+    <div class="container-weather">
+      <p id="msg"> Enter your City name in Search
+        Bar to know the weather</p>
+    </div>
+
+    <div class="container-right-info">
+      <h2 style="text-decoration: underline">Fun-facts</h2>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel cum, hic aspernatur rem quos recusandae alias
+      molestiae enim quisquam cumque impedit consequatur beatae nulla! Inventore officia minus eius eos eum?
+    </div>
+  </div>
+  <footer>
+    <p> Raushan Kumar Thakur &copy;
+      <script>document.write(new Date().getFullYear());</script> All Rights Reserved! &nbsp
+    </p>
+  </footer>
+
+
+
+  <script src=" script.js">
+  </script>
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
