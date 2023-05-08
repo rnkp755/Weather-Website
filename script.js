@@ -98,7 +98,7 @@ form.addEventListener('submit', (event) => {
         icon_url = "icons/lowtemp.png";
       }
 
-      else if (temperature > 45) {
+      else if ((temperature > 45 && unitGroup=="matric") || (temperature > 113 && unitGroup=="us")) {
         icon_url = "icons/hightemp.png";
       }
 
