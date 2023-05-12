@@ -107,9 +107,9 @@ form.addEventListener('submit', (event) => {
         <div class="card-upper-part">
           <img class="card-image" src=${icon_url}>
           <div class="upper-left">
-            <h3>${data.days[item].tempmin} ${tempUnit}</h3>
-            <h1>${data.days[item].temp} ${tempUnit}</h1>
-            <h3>${data.days[item].tempmax} ${tempUnit}</h3>  
+            <h3> <abbr title="Min. Temp of the day">${data.days[item].tempmin} ${tempUnit} </abbr> </h3>
+            <h1> <abbr title="Current Temperature">${data.days[item].temp} ${tempUnit} </abbr> </h1>
+            <h3> <abbr title="Max. Temp of the day">${data.days[item].tempmax} ${tempUnit} </abbr> </h3>  
           </div>
         </div>
 
