@@ -202,6 +202,10 @@ hr{
   padding: 1vw;
 }
 
+abbr[title]{
+  text-decoration: none;
+}
+
 .upper-left h1, .upper-left h3 {
   text-align: center;
 }
